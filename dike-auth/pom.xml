@@ -6,6 +6,7 @@
         <groupId>com.itom</groupId>
         <artifactId>dike-common</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../dike-common</relativePath>
     </parent>
 
     <artifactId>dike-auth</artifactId>

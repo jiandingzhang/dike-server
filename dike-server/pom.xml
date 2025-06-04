@@ -7,6 +7,11 @@
     <name>dike-server</name>
     <description>dike-server</description>
     <url/>
+    <parent>
+        <groupId>com.itom</groupId>
+        <artifactId>Dike</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
 
     <dependencies>
         <dependency>
