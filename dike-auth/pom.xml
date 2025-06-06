@@ -4,9 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.itom</groupId>
-        <artifactId>dike-common</artifactId>
+        <artifactId>Dike</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../dike-common</relativePath>
     </parent>
 
     <artifactId>dike-auth</artifactId>
@@ -16,6 +15,7 @@
     <url/>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -27,10 +27,12 @@
         </dependency>
 
         <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.1</version>
+            <groupId>com.itom</groupId>
+            <artifactId>dike-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+
     </dependencies>
 
     <build>

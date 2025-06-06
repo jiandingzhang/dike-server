@@ -4,9 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.itom</groupId>
-        <artifactId>dike-common</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../dike-common</relativePath>
+        <artifactId>Dike</artifactId>
+        <version>0.0.1-SNAPSHOT</version><!-- lookup parent from repository -->
     </parent>
 
     <artifactId>dike-core</artifactId>
@@ -16,6 +15,11 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.itom</groupId>
+            <artifactId>dike-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

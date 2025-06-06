@@ -15,9 +15,6 @@
     <description>Dike</description>
     <packaging>pom</packaging>
 
-    <properties>
-        <java.version>17</java.version>
-    </properties>
     <modules>
         <module>dike-server</module>
         <module>dike-common</module>
@@ -25,6 +22,81 @@
         <module>dike-file</module>
         <module>dike-auth</module>
     </modules>
+
+    <properties>
+        <java.version>17</java.version>
+        <spring-boot-starter-web.versiion>3.5.0</spring-boot-starter-web.versiion>
+        <spring-boot-starter-test.version>3.5.0</spring-boot-starter-test.version>
+        <mysql-connector-j.version>9.2.0</mysql-connector-j.version>
+        <hutool-all.version>5.7.17</hutool-all.version>
+        <mybatis-plus-boot-starter.version>3.5.10</mybatis-plus-boot-starter.version>
+        <mybatis-plus-jsqlparser.version>3.5.10</mybatis-plus-jsqlparser.version>
+        <swagger-annotations.version>2.2.0</swagger-annotations.version>
+        <lombok.version>1.18.38</lombok.version>
+        <jjwt.version>0.9.1</jjwt.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot-starter-web.versiion}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql-connector-j.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot-starter-test.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger-annotations.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-jsqlparser</artifactId>
+                <version>${mybatis-plus-jsqlparser.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
 
     <build>
         <plugins>
